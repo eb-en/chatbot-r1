@@ -26,6 +26,5 @@ def handle_convo():
         print("Bot: ", result)
         context += f"\nUser: {user_input}\nAI: {result}"
 
-
-if __name__ == "__main__":
+if __name__ == "__main__":  # Optional 
     handle_convo()
