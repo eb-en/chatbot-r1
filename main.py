@@ -22,7 +22,7 @@ def handle_convo():
         user_input = input("You: ")
         if user_input.lower() == "exit":
             break
-        result = chain.invoke({"context": "", "question": user_input})
+        result = chain.invoke({"context": context, "question": user_input})
         print("Bot: ", result)
         context += f"\nUser: {user_input}\nAI: {result}"
 
