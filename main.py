@@ -10,7 +10,7 @@ Here is the conversation history: {context}
 Question: {question}
 """
 
-model = OllamaLLM(model="deepseek-r1")
+model = OllamaLLM(model="deepseek-r1:1.5b")
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
 
